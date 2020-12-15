@@ -1,17 +1,64 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import DockLocation from "./DockLocation";
+import DragDrop from "./DragDrop";
+import DropInfo from "./DropInfo";
+import { I18nLabel } from "./I18nLabel";
+import Action from "./model/Action";
+import Actions from "./model/Actions";
+import BorderNode from "./model/BorderNode";
+import BorderSet from "./model/BorderSet";
+import Model from "./model/Model";
+import Node from "./model/Node";
+import RowNode from "./model/RowNode";
+import SplitterNode from "./model/SplitterNode";
+import TabNode from "./model/TabNode";
+import TabSetNode from "./model/TabSetNode";
+import Orientation from "./Orientation";
+import Rect from "./Rect";
+import Layout from "./view/Layout";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// eslint-disable-next-line
+export default {
+  Layout,
+  I18nLabel,
+  Actions,
+  Action,
+  Model,
+  Node,
+  RowNode,
+  SplitterNode,
+  TabNode,
+  TabSetNode,
+  BorderNode,
+  BorderSet,
+  DockLocation,
+  Orientation,
+  DragDrop,
+  DropInfo,
+  Rect,
+};
+
+export {
+  Layout,
+  I18nLabel,
+  Actions,
+  Action,
+  Model,
+  Node,
+  RowNode,
+  SplitterNode,
+  TabNode,
+  TabSetNode,
+  BorderNode,
+  BorderSet,
+  DockLocation,
+  Orientation,
+  DragDrop,
+  DropInfo,
+  Rect,
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));
